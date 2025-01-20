@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" />
+}
+
+<div class="home-container">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Welcome to <span class="brand-name">Project Manager Pro</span></h1>
+        <p>Your ultimate tool for managing projects, boosting productivity, and achieving success.</p>
+        <a asp-action = "Index" asp-controller = "Projets" class="btn btn-primary">Get Started</a>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="~/images/project.png" alt="Feature 1" />
+                <h3>Streamlined Project Management</h3>
+                <p>Organize tasks, track progress, and meet deadlines effortlessly.</p>
+            </div>
+            <div class="feature">
+                <img src="~/images/group.png" alt="Feature 2" />
+                <h3>Team Collaboration</h3>
+                <p>Empower your team with tools to communicate and collaborate in real-time.</p>
+            </div>
+            <div class="feature">
+                <img src="~/images/data-analytics.png" alt="Feature 3" />
+                <h3>Comprehensive Analytics</h3>
+                <p>Gain insights into your projects with detailed reports and dashboards.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-section">
+        <h2>What Our Users Say</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Project Manager Pro transformed the way we work. It's a game-changer!"</p>
+                <h4>- Sarah, Marketing Manager</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I can't imagine managing projects without this tool. It's intuitive and powerful."</p>
+                <h4>- John, Team Lead</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call-to-Action Section -->
+    <div class="cta-section">
+        <h2>Ready to Take Your Projects to the Next Level?</h2>
+        <p>Sign up today and start your journey to success with Project Manager Pro.</p>
+        <a href="/Account/Register" class="btn btn-success">Sign Up Now</a>
+    </div>
+</div>
+

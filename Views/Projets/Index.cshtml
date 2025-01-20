@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Project_management.Models.Projet>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/indexProjet.css" />
+}
+
+<h1>Projects</h1>
+
+<p>
+    <a asp-action="Create">Create a new project</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.titre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.etat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dateDebut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dateFin)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.titre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.etat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateDebut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateFin)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
+                <a asp-controller="Taches" asp-action="Create">Add task</a> |
+                <a asp-controller="Equipes" asp-action="Create">Add team</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

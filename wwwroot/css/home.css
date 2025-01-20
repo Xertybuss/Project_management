@@ -1,0 +1,100 @@
+﻿.home-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.hero-section .brand-name {
+    color: #ffae00;
+    font-weight: bold;
+}
+
+.hero-section .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffae00;
+    border : none;
+    color : black;
+    transition : 0.6s;
+}
+
+.hero-section .btn:hover{
+    opacity : 0.7;
+}
+
+.features-section {
+    margin: 40px 0;
+}
+
+.features-section h2{
+    display : flex;
+    justify-content : center;
+    margin-bottom : 15px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+    flex: 1;
+    background-color: #ffae00;
+    border-radius: 7px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.testimonials-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    max-width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffae00;
+    color: black;
+}
+
+.cta-section .btn {
+    margin-top: 20px;
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    transition : all 0.7s;
+}
+
+.cta-section .btn:hover {
+    opacity : 0.7;
+}
